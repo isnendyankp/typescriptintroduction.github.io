@@ -18,7 +18,7 @@ axios.get(url).then((response) => {
   logTodo(id, title, completed);
 });
 
-const logTodo = (id, title, completed) => {
+const logTodo = (id: number, title: string, completed: boolean) => {
   console.log(`
     The Todo with ID: ${id}
     Has a title of: ${title}
@@ -27,4 +27,7 @@ const logTodo = (id, title, completed) => {
 };
 // dont forget npm install axios before started
 // to execute type ts-node index.js(file name)
-// Response.data has properties of:
+// Response.data has properties of after fix:
+// The Todo with ID: 1
+// Has a title of: delectus aut autem
+// Is it finished? false
