@@ -30,6 +30,11 @@ let point: { x: number; y: number } = {
 };
 
 // Function
-const logNumber: (i: number) => {
+const logNumber: (i: number) => void = (i: number) => {
   console.log(i);
 };
+
+// description:
+// logNumber: (i: number) = function type number
+/* = (i: number) => {}; = parameter value with number as a type
+// void = function to return nothing
