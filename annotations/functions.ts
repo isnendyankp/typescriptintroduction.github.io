@@ -8,7 +8,7 @@
 // };
 
 
-// shorthand
+// shorthand syntax
 const add = (a: number, b: number) => {
   return a + b;
 };
