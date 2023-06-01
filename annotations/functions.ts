@@ -42,3 +42,17 @@ const throwFalse = (message: string): void => {
     throw new Error(message);
   }
 };
+
+const todaysWeather = {
+  date: new Date(),
+  weather: 'sunny',
+};
+
+// Undestructuring with Annotations
+const logWeather = (todaysWeather : { date: Date, weather: string }): void => {
+  console.log(todaysWeather.date);
+  console.log(todaysWeather.weather);
+};
+
+
+logWeather(todaysWeather);
