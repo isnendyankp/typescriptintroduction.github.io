@@ -48,10 +48,16 @@ const todaysWeather = {
   weather: 'sunny',
 };
 
-// Undestructuring with Annotations
-const logWeather = (todaysWeather : { date: Date, weather: string }): void => {
-  console.log(todaysWeather.date);
-  console.log(todaysWeather.weather);
+// // Undestructuring with Annotations
+// const logWeather = (todaysWeather : { date: Date, weather: string }): void => {
+//   console.log(todaysWeather.date);
+//   console.log(todaysWeather.weather);
+// };
+
+// Destructuring with Annotations
+const logWeather = ({ date, weather }: { date: Date, weather: string }): void => {
+  console.log(date);
+  console.log(weather);
 };
 
 
