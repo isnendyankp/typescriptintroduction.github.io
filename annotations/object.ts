@@ -11,3 +11,6 @@ const profile = {
     this.age = age;
   },
 };
+
+// Destructuring age
+const { age }: { age: number } = profile;
