@@ -54,11 +54,12 @@ const todaysWeather = {
 //   console.log(todaysWeather.weather);
 // };
 
-// Destructuring with Annotations
+// Destructuring with Annotations Explain :
+// { date, weather }: / destructuring
+// { date: Date, weather: string } / Annotations
 const logWeather = ({ date, weather }: { date: Date, weather: string }): void => {
   console.log(date);
   console.log(weather);
 };
-
 
 logWeather(todaysWeather);
