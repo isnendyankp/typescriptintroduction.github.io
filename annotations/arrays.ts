@@ -30,6 +30,8 @@ carMakers.map(
 const importantDates: (Date | string) [] = [new Date()];
 // push with Type value as a string
 importantDates.push('2030-10-10');
+// push with Type value as a Date
+importantDates.push(new Date());
 
 
 
