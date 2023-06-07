@@ -21,6 +21,9 @@ carMakers.map(
 // Flexible types /multiple types in arrays
 
 // Everything inside this array cab be treated as a string or date object
-const mainDates: [new Date(), '2031-11-12'];
+// const mainDates: [new Date(), '2031-11-12'];
+
+// This array can con  only contain dates
+const mainDates: [new Date()];
 
 
