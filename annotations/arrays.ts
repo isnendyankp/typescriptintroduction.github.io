@@ -32,6 +32,8 @@ const importantDates: (Date | string) [] = [new Date()];
 importantDates.push('2030-10-10');
 // push with Type value as a Date
 importantDates.push(new Date());
+// failed push because that is neither a string or date object
+importantDates.push(100);
 
 
 
