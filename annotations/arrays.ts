@@ -17,3 +17,10 @@ carMakers.map(
     return car.toUpperCase();
   }
 );
+
+// Flexible types /multiple types in arrays
+
+// Everything inside this array cab be treated as a string or date object
+const mainDates: [new Date(), '2031-11-12'];
+
+
