@@ -24,6 +24,9 @@ carMakers.map(
 // const mainDates: [new Date(), '2031-11-12'];
 
 // This array can con  only contain dates
-const mainDates: [new Date()];
+// const mainDates: [new Date()];
+
+// add manual annotations , this array contain can contain either type of value
+const importantDates: (Date | string) [] = [new Date()];
 
 
