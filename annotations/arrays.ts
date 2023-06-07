@@ -28,5 +28,8 @@ carMakers.map(
 
 // add manual annotations , this array contain can contain either type of value
 const importantDates: (Date | string) [] = [new Date()];
+// push with Type value as a string
+importantDates.push('2030-10-10');
+
 
 
