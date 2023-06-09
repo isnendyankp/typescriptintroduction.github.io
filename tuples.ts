@@ -25,3 +25,22 @@ const carStats = {
   horsepower: 400,
   weight: 3354,
 };
+
+// Other references
+
+// Definisi tuple
+let tuple: [string, number, boolean];
+
+// Inisialisasi nilai tuple
+tuple = ["hello", 10, true];
+
+// Mengambil nilai tuple
+let hello: string = tuple[0];
+let ten: number = tuple[1];
+let isTrue: boolean = tuple[2];
+
+// Atau dapat juga mengambil nilai langsung melalui destructuring
+let [str, num, bool] = tuple;
+console.log(str); // Output: "hello"
+console.log(num); // Output: 10
+console.log(bool); // Output: true
