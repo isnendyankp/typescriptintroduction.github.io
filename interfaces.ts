@@ -7,6 +7,10 @@ const oldCivic = {
 };
 
 // create function with 1 argument is vehicle
-const printVehicle = (vehicle) => {
+const printVehicle = (vehicle: {
+  name: string;
+  year: number;
+  broken: boolean;
+}): => {
 
 }
