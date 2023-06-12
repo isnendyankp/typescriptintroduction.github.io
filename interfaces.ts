@@ -18,3 +18,6 @@ const printVehicle = (vehicle: {
     console.log(`Year: ${vehicle.year}`);
     console.log(`Broken: ${vehicle.broken}`);
 };
+
+// print vehicle and pass in oldCivic
+printVehicle(oldCivic);
