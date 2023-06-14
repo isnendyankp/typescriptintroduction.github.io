@@ -16,12 +16,13 @@ const oldCivic = {
 // create function with 1 argument is vehicle
 // Add type annotation (vehicle: {name: string; year: number; broken: boolean }):
 // add void for return
-const printVehicle = (vehicle: {
-  name: string;
-  year: number;
-  broken: boolean;
-}): void => {
-
+// const printVehicle = (vehicle: {
+//   name: string;
+//   year: number;
+//   broken: boolean;
+// }): void => {
+// S7-41 Fixing Long Annotations with interfaces
+const printVehicle = (vehicle: Vehicle): void => {
   console.log(`Name: ${vehicle.name}`);
   console.log(`Year: ${vehicle.year}`);
   console.log(`Broken: ${vehicle.broken}`);
