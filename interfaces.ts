@@ -15,7 +15,8 @@ const oldCivic = {
   broken: true,
   // s7-42: add summary function
   summary(): string {
-    
+    // a function whose declared type must return a value
+    return `Name: ${this.name}`;
   },
 };
 
