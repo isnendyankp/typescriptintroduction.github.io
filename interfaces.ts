@@ -15,7 +15,7 @@ const oldCivic = {
   broken: true,
   // s7-42: add summary function
   summary(): string {
-    // a function whose declared type must return a value
+    // s7-42: a function whose declared type must return a value
     return `Name: ${this.name}`;
   },
 };
@@ -31,9 +31,8 @@ const oldCivic = {
 
 // S7-41 Fixing Long Annotations with interfaces
 const printVehicle = (vehicle: Vehicle): void => {
-  console.log(`Name: ${vehicle.name}`);
-  console.log(`Year: ${vehicle.year}`);
-  console.log(`Broken: ${vehicle.broken}`);
+  // s7-42: pull out all properties with summary function
+  console.log(vehicle.summary());
 };
 
 // print vehicle and pass in oldCivic
