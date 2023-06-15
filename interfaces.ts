@@ -1,7 +1,7 @@
 // S7-41 Fixing Long Annotations with interfaces
 interface Vehicle {
   name: string;
-  year: number;
+  year: Date;
   broken: boolean;
 }
 
@@ -9,7 +9,7 @@ interface Vehicle {
 // create variable with 3 type string , number, boolean
 const oldCivic = {
   name: 'civic',
-  year: 2000,
+  year: new Date(),
   broken: true,
 };
 
@@ -21,6 +21,7 @@ const oldCivic = {
 //   year: number;
 //   broken: boolean;
 // }): void => {
+
 // S7-41 Fixing Long Annotations with interfaces
 const printVehicle = (vehicle: Vehicle): void => {
   console.log(`Name: ${vehicle.name}`);
