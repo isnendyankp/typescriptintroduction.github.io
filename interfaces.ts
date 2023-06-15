@@ -13,6 +13,10 @@ const oldCivic = {
   name: 'civic',
   year: new Date(),
   broken: true,
+  // s7-42: add summary function
+  summary(): string {
+    
+  },
 };
 
 // create function with 1 argument is vehicle
