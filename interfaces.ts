@@ -3,6 +3,8 @@ interface Vehicle {
   name: string;
   year: Date;
   broken: boolean;
+  // s7-42: add new property
+  summary(): string;
 }
 
 // 40. Long Type Annotations
