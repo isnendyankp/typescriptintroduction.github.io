@@ -1,9 +1,14 @@
 // S7-41 Fixing Long Annotations with interfaces
+// interface Vehicle {
+//   name: string;
+//   year: Date;
+//   broken: boolean;
+//   // s7-42: add new property
+//   summary(): string;
+// }
+
+// s7-43:still work after pull put name,year & broken
 interface Vehicle {
-  name: string;
-  year: Date;
-  broken: boolean;
-  // s7-42: add new property
   summary(): string;
 }
 
