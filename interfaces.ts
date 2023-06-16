@@ -8,7 +8,7 @@
 // }
 
 // s7-43:still work after pull put name,year & broken
-interface Vehicle {
+interface Reportable {
   summary(): string;
 }
 
@@ -35,10 +35,10 @@ const oldCivic = {
 // }): void => {
 
 // S7-41 Fixing Long Annotations with interfaces
-const printVehicle = (vehicle: Vehicle): void => {
+const printSummary = (item: Reportable): void => {
   // s7-42: pull out all properties with summary function
-  console.log(vehicle.summary());
+  console.log(item.summary());
 };
 
-// print vehicle and pass in oldCivic
-printVehicle(oldCivic);
+// printSummary and pass in oldCivic
+printSummary(oldCivic);
