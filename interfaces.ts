@@ -35,3 +35,5 @@ const printSummary = (item: Reportable): void => {
 
 // printSummary and pass in oldCivic
 printSummary(oldCivic);
+// can printSummary because they both have a property called summary & a function that returns a string too.
+printSummary(drink);
