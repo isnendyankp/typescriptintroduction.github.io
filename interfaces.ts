@@ -1,11 +1,3 @@
-// S7-41 Fixing Long Annotations with interfaces
-// interface Vehicle {
-//   name: string;
-//   year: Date;
-//   broken: boolean;
-//   // s7-42: add new property
-//   summary(): string;
-// }
 
 // s7-43:still work after pull put name,year & broken
 interface Reportable {
@@ -25,14 +17,10 @@ const oldCivic = {
   },
 };
 
-// create function with 1 argument is vehicle
-// Add type annotation (vehicle: {name: string; year: number; broken: boolean }):
-// add void for return
-// const printVehicle = (vehicle: {
-//   name: string;
-//   year: number;
-//   broken: boolean;
-// }): void => {
+// s7- 44 setup another object
+const drink = {
+
+};
 
 // S7-41 Fixing Long Annotations with interfaces
 const printSummary = (item: Reportable): void => {
