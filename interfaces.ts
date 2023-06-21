@@ -19,7 +19,12 @@ const oldCivic = {
 
 // s7- 44 setup another object
 const drink = {
-
+  color: 'brown',
+  carbonated: true,
+  sugar: 40,
+  summary(): string {
+    return `My drink has ${this.sugar} grams of sugar`;
+  },
 };
 
 // S7-41 Fixing Long Annotations with interfaces
