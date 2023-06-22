@@ -5,5 +5,7 @@ class Vehicle {
   }
 }
 
-// create new keyword vehicle with constructor Vehicle
+// create new keyword vehicle with class Vehicle
 const vehicle = new Vehicle();
+// access method
+vehicle.drive();
