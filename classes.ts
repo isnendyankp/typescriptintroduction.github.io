@@ -13,7 +13,12 @@ class Vehicle {
 // cr8 second class as a Childclass
 // cr8 inheritance on typscirpt
 // car = Childclass, Vehidcle Parentclass
-class Car extends Vehicle {}
+class Car extends Vehicle {
+  // override method drive with results on terminal vromm, beedp
+  drive(): void {
+    console.log('vroom');
+  }
+}
 
 // create new keyword car with class Car
 const car = new Car();
