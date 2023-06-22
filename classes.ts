@@ -5,3 +5,5 @@ class Vehicle {
   }
 }
 
+// create new keyword vehicle with constructor Vehicle
+const vehicle = new Vehicle();
