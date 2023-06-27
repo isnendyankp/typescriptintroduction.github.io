@@ -18,6 +18,10 @@ class Car extends Vehicle {
   private drive(): void {
     console.log('vroom');
   }
+  startDrivingProcess(): void {
+    this.drive();
+    this.honk();
+  }
 }
 
 // create new keyword car with class Car
@@ -26,4 +30,6 @@ const car = new Car();
 // access/call method can display with ts-node classes.ts/  namefile.ts
 // cant call carr.drive because property drive is private and only accessible within class car
 car.drive();
+// can call startDrivingProcess because property not private
+car.startDrivingProcess();
 car.honk();
