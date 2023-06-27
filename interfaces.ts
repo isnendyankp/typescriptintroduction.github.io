@@ -1,4 +1,3 @@
-
 // s7-43:still work after pull put name,year & broken
 interface Reportable {
   summary(): string;

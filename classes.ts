@@ -1,11 +1,11 @@
 // Parent class
 class Vehicle {
   // method
-  drive(): void {
+  public drive(): void {
     console.log('chugga chugga');
   }
 
-  honk(): void {
+  public honk(): void {
     console.log('beep');
   }
 }
@@ -15,7 +15,7 @@ class Vehicle {
 // car = Childclass, Vehidcle Parentclass
 class Car extends Vehicle {
   // override method drive with results on terminal vromm, beedp
-  drive(): void {
+  public drive(): void {
     console.log('vroom');
   }
 }
