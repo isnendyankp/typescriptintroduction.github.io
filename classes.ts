@@ -15,7 +15,7 @@ class Vehicle {
 // car = Childclass, Vehidcle Parentclass
 class Car extends Vehicle {
   // override method drive with results on terminal vromm, beedp
-  public drive(): void {
+  private drive(): void {
     console.log('vroom');
   }
 }
@@ -24,5 +24,6 @@ class Car extends Vehicle {
 const car = new Car();
 // access/call method
 // access/call method can display with ts-node classes.ts/  namefile.ts
+// cant call carr.drive because property drive is private and only accessible within class car
 car.drive();
 car.honk();
