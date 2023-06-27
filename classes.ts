@@ -11,8 +11,11 @@ class Vehicle {
   }
 }
 
+const vehicle = new Vehicle();
+// cant call 'honk' is protected and only accessible within class 'Vehicle' and its subclasses.
+vehicle.honk();
+
 // cr8 second class as a Childclass
-// cr8 inheritance on typscirpt
 // car = Childclass, Vehidcle Parentclass
 class Car extends Vehicle {
   // override method drive with results on terminal vromm, beep
