@@ -14,8 +14,9 @@ console.log(vehicle.color)
 class Car extends Vehicle {
   // cr8 constructor on child class
   // wheels = property/first argumen, number = type
-  constructor(public wheels: number,) {
-    
+  // Constructors for derived classes must contain a 'super' call.
+  constructor(public wheels: number) {
+    super('red');
   }
   // override method drive with results on terminal vromm, beep
   // private method can only be called by other method in this class
