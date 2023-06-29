@@ -1,14 +1,7 @@
 // Parent class
 class Vehicle {
-  // method
-  // color = name property, string = type annotation, red = value
-  // if run console.log display will be red, vroom, beep
-  color: string = 'red';
-  // constructor is a special method within a class that is used to create and initialize objects of that class.
-  constructor(color: string) {
-    this.color = color;
-  }
-  // protected can be called by other method in this class, or by other methods in child classes
+  // shorthand code constructor wih public property
+  constructor(public color: string) {}
   protected honk(): void {
     console.log('beep');
   }
