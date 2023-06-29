@@ -1,4 +1,4 @@
-// Parent class
+// Parentclass = Vehicle
 class Vehicle {
   // shorthand code constructor wih public property
   constructor(public color: string) {}
@@ -10,20 +10,20 @@ class Vehicle {
 const vehicle = new Vehicle('orange');
 console.log(vehicle.color)
 
-// Car = childclass
+// childclass = Car with basic inheritance
 class Car extends Vehicle {
   // cr8 constructor on child class
-  // wheels = property/first argumen, number = type
+  // public property, wheels = first argumen, number = type
+  // color = second argumentm string = type & dont need property bcoz this argument belongs to Vehicle
   // Constructors for derived classes must contain a 'super' call.
-  // color: string = cr8 second argument & belongs to Vehicle
   constructor(public wheels: number, color: string) {
-    super('red');
+    super(color);
   }
-  // override method drive with results on terminal vromm, beep
-  // private method can only be called by other method in this class
+
   private drive(): void {
     console.log('vroom');
   }
+
   startDrivingProcess(): void {
     // can call drive because on same class(Car)
     this.drive();
@@ -32,10 +32,8 @@ class Car extends Vehicle {
   }
 }
 
-// create new keyword car with class Car
-const car = new Car('red');
-// access/call method
+// 4 = first Argument with type number(childclass), 'red' = second argument with type string(parentclass)
+const car = new Car(4, 'red');
 // access/call method can display with ts-node classes.ts/  namefile.ts
 // can call startDrivingProcess because property not private
 car.startDrivingProcess();
-car.honk();
