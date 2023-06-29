@@ -15,7 +15,8 @@ class Car extends Vehicle {
   // cr8 constructor on child class
   // wheels = property/first argumen, number = type
   // Constructors for derived classes must contain a 'super' call.
-  constructor(public wheels: number) {
+  // color: string = cr8 second argument & belongs to Vehicle
+  constructor(public wheels: number, color: string) {
     super('red');
   }
   // override method drive with results on terminal vromm, beep
